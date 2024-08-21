@@ -13,6 +13,7 @@
   font-size: 46px;
   margin: 15px;
   margin-top: 2%;
+  text-align: center;
 }
 .mainHead1{
   font-family: 'Raleway', sans-serif;
@@ -21,7 +22,7 @@
   margin-top: 15%;
   margin-left: 10%;
 }.NavbarCss {
-  background-color: #ebc9c9; /* Dark background for the navbar */
+  background-color: #8caacc; /* Dark background for the navbar */
   padding: 15px 20px; /* Padding around the navbar */
   display: flex; /* Flexbox layout for horizontal alignment */
   justify-content: center; /* Center the navbar items */
@@ -53,7 +54,7 @@
 
 /* Container for the card elements */
 .card-container {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   padding: 2%;
   margin: 5%;
@@ -127,3 +128,60 @@
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hover effect */
 }
+
+.dyImg{
+  /* height: 500px;
+  width: 500px;
+  margin-left: 10%;
+  margin-top: 2%; */
+  max-width: 40%; /* Adjust the image size as needed */
+    height: auto; /* Keeps the image's aspect ratio */
+    margin-right: 20px; /* Adds space between the image and text */
+    
+}
+/* .dyHead{
+  display: flex;
+  flex-wrap: wrap;
+
+} */
+.recipe-detail{
+  display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Adds space between the image and the text */
+    padding: 20px; /* Optional: Adds some padding around the container */
+}
+.right-text {
+  flex: 1; /* Allows the text to take up the remaining space */
+  font-family: "Raleway";
+}
+
+
+  body{
+    background: hsla(186, 33%, 94%, 1);
+
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+    
+
+  }
+  .tags li{
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 3px 3px 3px 3px;
+    border-radius: 10px;
+  }
+  .ingdr li{
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 5px 5px 5px 5px;
+    
+    padding: 3px 3px 3px 3px;
+    border-radius: 10px;
+  }
+  .instr li{
+ 
+    list-style-type:decimal;
+  }

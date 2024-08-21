@@ -36,20 +36,7 @@ function Home() {
   return (
     <>
       <h1 className='mainHead'>Welcome to Home Page</h1>
-<div className='card-container'>
-      {users.map(recipe => (
-      <div className='card' key={recipe.id}>
-        <img className="card-img-top" src={recipe.image} alt={recipe.name} />
-        <div className="card-body">
-          <h5 className="card-title" >{recipe.name}</h5>
-            <p className="card-text">Cuisine Type : {recipe.cuisine} </p>
-            <Link to={`/recipe/${recipe.id}`} className="btn btn-primary">View Details</Link>
-         </div> 
-      </div>
-        ))}
-     </div>   
-   
-    </>  
+</>
 );
 }
 
