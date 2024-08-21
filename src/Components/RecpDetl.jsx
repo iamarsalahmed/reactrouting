@@ -6,7 +6,7 @@ import "./Navbar.css"
 const RecpDetl = () => {
   const { id } = useParams(); // Get the dynamic 'id' from the URL
   const [recipe, setRecipe] = useState(null);
- 
+  const zeroBasedId = parseInt(id) - 1;
   useEffect(() => {
     // Use Axios to fetch the recipe details
     axios.get(`https://dummyjson.com/recipes/`) // Replace with your API URL
@@ -18,7 +18,7 @@ const RecpDetl = () => {
   if (!recipe) {
     return <p>Loading...</p>;
   }
-  console.log(recipe.recipes[{id}])
+  console.log(recipe.recipes[{zeroBasedId}])
   
   return (
     
