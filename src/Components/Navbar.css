@@ -1,0 +1,187 @@
+/* src/components/Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin: 15px;
+  margin-left: 10%;
+  margin-right: 15%;
+}
+.mainHead{
+  font-family: 'Raleway', sans-serif;
+  font-size: 46px;
+  margin: 15px;
+  margin-top: 2%;
+  text-align: center;
+}
+.mainHead1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 46px;
+  margin: 15px;
+  margin-top: 15%;
+  margin-left: 10%;
+}.NavbarCss {
+  background-color: #8caacc; /* Dark background for the navbar */
+  padding: 15px 20px; /* Padding around the navbar */
+  display: flex; /* Flexbox layout for horizontal alignment */
+  justify-content: center; /* Center the navbar items */
+  align-items: center; /* Center items vertically */
+
+}
+.titleHead{
+  margin-left: 10px;
+  color: #007bff;
+
+
+}
+.NavbarCss a {
+  color: #555555; /* White text color for links */
+  margin: 0 15px; /* Spacing between links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 18px; /* Increase font size for better readability */
+  font-weight: bold; /* Make the text bold */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.NavbarCss a:hover {
+  color: #ff6347; /* Change link color on hover */
+}
+
+.NavbarCss a.active {
+  border-bottom: 2px solid #ff6347; /* Highlight the active link */
+}
+
+/* Container for the card elements */
+.card-container {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 2%;
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap onto the next line */
+  gap: 16px; /* Adjust spacing between cards */
+  box-sizing: border-box; /* Ensures padding and borders are included in the total width */
+}
+
+/* Style for each card */
+.card {
+  flex: 1 1 calc(25% - 16px); /* Flex-grow, flex-shrink, and base width */
+  box-sizing: border-box; /* Ensures padding and borders are included in the total width */
+  border: 1px solid #ddd; /* Example border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  background-color: #fff; /* Background color */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Responsive styling for card container */
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 1 calc(33.333% - 16px); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 16px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%; /* 1 card per row */
+  }
+}
+
+.card-img-top {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-body {
+  padding: 16px; /* Padding inside the card */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Font size for the title */
+  margin-bottom: 8px; /* Space below the title */
+}
+
+.card-text {
+  font-size: 1rem; /* Font size for text */
+  margin-bottom: 8px; /* Space below text */
+}
+
+.btn-primary {
+  display: inline-block; /* Button styling */
+  padding: 8px 16px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hover effect */
+}
+
+.dyImg{
+  /* height: 500px;
+  width: 500px;
+  margin-left: 10%;
+  margin-top: 2%; */
+  max-width: 40%; /* Adjust the image size as needed */
+    height: auto; /* Keeps the image's aspect ratio */
+    margin-right: 20px; /* Adds space between the image and text */
+    
+}
+/* .dyHead{
+  display: flex;
+  flex-wrap: wrap;
+
+} */
+.recipe-detail{
+  display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Adds space between the image and the text */
+    padding: 20px; /* Optional: Adds some padding around the container */
+}
+.right-text {
+  flex: 1; /* Allows the text to take up the remaining space */
+  font-family: "Raleway";
+}
+
+
+  body{
+    background: hsla(186, 33%, 94%, 1);
+
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+    
+
+  }
+  .tags li{
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 3px 3px 3px 3px;
+    border-radius: 10px;
+  }
+  .ingdr li{
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 5px 5px 5px 5px;
+    
+    padding: 3px 3px 3px 3px;
+    border-radius: 10px;
+  }
+  .instr li{
+ 
+    list-style-type:decimal;
+  }
